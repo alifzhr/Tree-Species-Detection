@@ -17,10 +17,23 @@ Tree species detection with YOLOv8 automates identifying and locating tree types
 - Python 3.9 or newer
 - pip (Python package installer)
 
-Install all dependencies with:
-pip install ultralytics opencv-python torch matplotlib pyyaml picamera2
-
 *`picamera2` is only required for running real-time detection on Raspberry Pi.*
+
+---
+
+## Quick Start: Virtual Environment Setup
+
+It’s best to use a virtual environment (venv) for dependency isolation. On Linux or WSL, run:
+
+### Create and activate a new virtual environment
+`python3 -m venv .venv`
+`source .venv/bin/activate`
+
+### Upgrade pip (recommended)
+`pip install --upgrade pip`
+
+### Install the dependencies
+`pip install ultralytics opencv-python torch matplotlib pyyaml picamera2 jupyterlab`
 
 ---
 
@@ -37,7 +50,7 @@ pip install ultralytics opencv-python torch matplotlib pyyaml picamera2
 #### **Testing Custom Models and Images**
 Users can also test their own trained models in the notebook by changing the model path and image source, for example:
 
-from ultralytics import YOLO
+`from ultralytics import YOLO`
 
 model = YOLO("runs/detect/train6/weights/bestV2.pt")
 results = model.predict(source='Dataset/Cannonball/can_32.jpg', save=False, conf=0.4)
