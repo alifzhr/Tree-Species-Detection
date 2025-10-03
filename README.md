@@ -46,7 +46,7 @@ Adjust paths to any model file and image to quickly visualize detection outputs 
 
 ### 2. Real-Time Detection (`tree-species.py`)
 
-- Copy your trained weights file (e.g., `best.pt`) to your Raspberry Pi.
+- Copy your trained weights file (e.g., `bestV2.pt`) to your Raspberry Pi.
 - Ensure the Pi camera is connected and enabled.
 - Run:
   python tree-species.py
