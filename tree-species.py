@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from picamera2 import Picamera2
 import time
 
-model = YOLO("best.pt")
+model = YOLO("bestV2.pt")
 
 picam2 = Picamera2()
 picam2.configure(picam2.create_preview_configuration(main={"format": "XRGB8888", "size": (320,320)}))
