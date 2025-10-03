@@ -52,8 +52,8 @@ Users can also test their own trained models in the notebook by changing the mod
 
 `from ultralytics import YOLO`
 
-model = YOLO("runs/detect/train6/weights/bestV2.pt")
-results = model.predict(source='Dataset/Cannonball/can_32.jpg', save=False, conf=0.4)
+`model = YOLO("runs/detect/train6/weights/bestV2.pt")`
+`results = model.predict(source='Dataset/Cannonball/can_32.jpg', save=False, conf=0.4)`
 
 Adjust paths to any model file and image to quickly visualize detection outputs with bounding boxes and confidence scores.
 
